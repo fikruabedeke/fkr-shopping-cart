@@ -1,5 +1,5 @@
 # 1. Project Title: Shopping cart: Integrate Strapi with a React application
-   This application updates "toDo" items on the realtime. Users could add or remove thier to do items as needed.
+   This application updates shopping cart items by pulling products from inventory/backend strapi database.
    ![Landing page](./src/fkr_shopping_cart.png "alternate landing page")
      1.fkr-shopping-car
 # 2. Motivation
