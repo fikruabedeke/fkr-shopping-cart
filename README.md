@@ -1,34 +1,23 @@
-# fikrudev.github.io
-## Full Stack Development with MERN framework :GitHub Projects portfolio
-### Project Description: Home page
-### Author name: FIKRU BEDEKE
-### Author email: fikrubedeke@gmail.com
-
-#### Contents:
-* ***Profile***: An overview of web application projects developed on MERN framework
-* ***Pacman***: Javascript, HTML and CSS combination that give interesting views like when user click the button 
-* ***RealTimeBusTracker***: Tracks bus stops between MIT and Harvard campuses on real time.
-## 1. Profile Imgs
-      - [x] images/img1
-      - [x] images/img2
-      - [x] images/img3
-      - [x] images/img4
-      - [x] index.html
-  ## 2. Pacman Exercise
-      - [x] images/pacman1
-      - [x] images/pacman2
-      - [x] images/pacman3
-      - [x] images/pacman4
-      - [x] pacmen.js
-      - [x] index.html
- ## 3. Eye Exercise
-      - [x] eyes.js
-      - [x] index.html
-      - [x] styles.css
- ## 4. Real Time Bus Tracker
-      - [x] index.html
-      - [x] tracker.js
-      - [x] styles.css
- ## 5. Clock
-      - [x] index.html
-      - [x] clock.js
+# 1. Project Title: Shopping cart: Integrate Strapi with a React application
+   This application updates shopping cart items by pulling products from inventory/backend strapi database.
+   ![Landing page](./src/fkr_shopping_cart.png "alternate landing page")
+     1.fkr-shopping-car
+# 2. Motivation
+    Learning how to integrate front end app with backend api
+# 3. Build Status
+     Work in progress
+# 4. Code Style
+    react JSX, CSS, Javascript, HTML
+# 5. Tech/Framework used
+    React, HTML, CSS, JavaScript
+# 6. Installation
+     will update
+# 7. API References
+     will update
+# 8. Tests
+# 9. How to Use
+    will update
+# 10. Contribute
+    will update
+# 11. License
+  GitHub, MIT and others technology owners’ products/services/logs are their own.
