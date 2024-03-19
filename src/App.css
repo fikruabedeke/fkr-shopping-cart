@@ -50,9 +50,12 @@
   align-items: center;
 }
 .container{
-  margin: 10px;
-  padding-top: 30px;
-  background-color: green;
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+  margin: 30px;
 }
 
 .restock-btn{

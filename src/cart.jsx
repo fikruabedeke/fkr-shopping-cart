@@ -184,47 +184,46 @@ const Products = (props) => {
   };
 
   return (
-    <div>
-    <div className="products">
-          <Accordion defaultActiveKey="0">
-           <Accordion.Item eventKey={1}>
-              <Accordion.Header>Product List</Accordion.Header> 
-              <Accordion.Body style={{ listStyleType: "none" }}>{list}</Accordion.Body>
-           </Accordion.Item>
-           <Accordion.Item eventKey={2}>
-           <Accordion.Header>Cart Contents</Accordion.Header> 
-              <AccordionBody style={{ listStyleType: "none" }}>{cartList}</AccordionBody>
-          </Accordion.Item>
-          <Accordion.Item eventKey={3}>
-            <Accordion.Header>CheckOut</Accordion.Header> 
-              <Accordion.Body style={{ listStyleType: "none" }}>
-                <Button onClick={checkOut}>CheckOut $ {finalList().total}</Button>
-               <div> {finalList().total > 0 && finalList().final} </div></Accordion.Body>
-          </Accordion.Item>
-          </Accordion>
-          </div>
-        <form
-          onSubmit={(event) => {
-            restockProducts(event.target.value);
-            console.log(`Restock called on ${query}`);
-            event.preventDefault();
-          }}
-        >
-          <input className="restock-input-btn"
-            type="text"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-          />
-          <button className="restock-btn" type="submit" onClick={(event) => {
-            restockProducts(event);
-            console.log(`Restock called on ${query}`);
-            event.preventDefault();
-          }}>ReStock Products</button>
-        </form>
+    <div className="product">
+      <div className="container">
+        <div>
+          <h3>Products</h3>
+          <div style={{ listStyleType: "none" }}>{list}</div>
+        </div>
+        <div>
+          <h3>Cart List</h3>
+           <div style={{ listStyleType: "none" }}>{cartList}</div>
+        </div>
+      <div>
+          <h3>Check Out Items</h3> 
+          <div style={{ listStyleType: "none" }}></div>
+          <button onClick={checkOut}>CheckOut $ {finalList().total}</button>
+          <div> {finalList().total > 0 && finalList().final} </div>
       </div>
+    </div>
+    <form
+      onSubmit={(event) => {
+        restockProducts(event.target.value);
+        console.log(`Restock called on ${query}`);
+        event.preventDefault();
+      }}
+    >
+      <input className="restock-input-btn"
+        type="text"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+      />
+      <button className="restock-btn" type="submit" onClick={(event) => {
+        restockProducts(event);
+        console.log(`Restock called on ${query}`);
+        event.preventDefault();
+      }}>ReStock Products</button>
+    </form>
+  </div>
  
   );
 };
+
 export default Products;
 // ========================================
 //ReactDOM.render(<Products />, document.getElementById("root"));
